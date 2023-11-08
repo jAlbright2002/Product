@@ -15,8 +15,8 @@ public class ProductController {
     }
 
     @PostMapping("/products")
-    public Object addNewProduct(@RequestBody Product product) {
-        return;
+    public Warehouse addNewProduct(@RequestBody Product product) {
+        return ps.getProductById(product);
     }
 
 }
